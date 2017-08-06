@@ -47,7 +47,7 @@ def df_print(file, year, populated_data_dict):
     pd.set_option('display.max_rows', 1000)
     df = pd.DataFrame(data)
     df = df[['Rank', 'Name_Male','Number_Male','Name_Female','Number_Female']]
-    sys.stdout=open(file_output+str(decade)+".txt", "w")
+    sys.stdout = open(file_output+"/"+str(decade)+".txt", "w")
     print (df)
     sys.stdout.close()
 
